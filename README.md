@@ -47,6 +47,12 @@ This will:
 2. Create `.desktop` launchers for each installed game in `~/.local/share/applications/`.
 3. Remove `.desktop` files for games that are no longer installed.
 
+### Or make binary with pyinstaller
+```bash
+pip install pyinstaller
+pyinstaller --onefile main.py
+```
+
 ### Options
 
 * `-h` or `--help`: Show usage instructions.

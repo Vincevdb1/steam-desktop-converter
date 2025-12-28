@@ -59,7 +59,7 @@ def save_desktop_file(app_id: str, desktop_content: str) -> None:
     with open(filename, "w", encoding="utf-8") as f:
         f.write(desktop_content)
     os.chmod(filename, 0o755)
-    print(f"✅ Created: {filename}")
+    print(f" Created: {filename}")
 
 
 def process_games(vdf_data: dict, steam_root: str):
@@ -98,4 +98,4 @@ def process_games(vdf_data: dict, steam_root: str):
             save_desktop_file(app_id, desktop_content)
             total_created += 1
 
-    print(f"\n🎮 Done! Created {total_created} desktop entries.")
+    print(f"\nDone! Created {total_created} desktop entries.")
