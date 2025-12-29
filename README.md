@@ -15,21 +15,17 @@ Automatically generates `.desktop` launchers for your installed Steam games on L
 1. Clone this repository:
 
 ```bash
-git clone https://github.com/yourusername/steam-desktop-converter.git
+git clone https://github.com/Vincevdb1/steam-desktop-converter.git
 cd steam-desktop-converter
 ```
 
-2. Make sure you have Python 3 or higher installed and the required dependency:
+2. Make sure you have Python 3 or higher installed and the required dependencies:
 
 ```bash
-pip install vdf
+pip install -r requirements.txt
 ```
-
-3. Optionally, make `main.py` executable:
-
-```bash
-chmod +x main.py
-```
+### Nix
+TODO: Add nix flake instructions
 
 ## Usage
 
