@@ -25,7 +25,27 @@ cd steam-desktop-converter
 pip install -r requirements.txt
 ```
 ### Nix
-TODO: Add nix flake instructions
+
+Add the repository to your `inputs`:
+
+```nix
+inputs.steam-desktop-converter.url = "github:Vincevdb1/steam-desktop-converter";
+```
+
+Then add the package to your configuration:
+
+```nix
+{ inputs }:
+
+{
+  environment.systemPackages = {
+    inputs.steam-desktop-converter.packages.${system}.default
+  };
+}
+```
+
+### Manual Installation
+
 
 ## Usage
 
